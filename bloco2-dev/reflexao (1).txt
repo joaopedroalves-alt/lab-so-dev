@@ -9,6 +9,12 @@
 # No shell moderno, qual mecanismo cumpre papel equivalente?
 
 Resposta:
+O pipe conecta a saída padrão de um processo à entrada padrão do próximo. Cria um canal de dados
+entre programas, sem arquivo intermediário. É o mecanismo mais elegante do Unix — e o mais poderoso.
+O redirecionamento desvia a saída para um arquivo (>) ou lê a entrada de um arquivo (<). O >>
+acrescenta ao final sem apagar o conteúdo existente.
+O script como job automatizado é uma sequência de comandos num arquivo, reproduzível e versionável. O
+que o monitor executaria passo a passo, agora está codificado e pode rodar sem intervenção.
 
 # ─────────────────────────────────────────────────────
 
