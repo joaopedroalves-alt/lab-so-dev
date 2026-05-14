@@ -25,11 +25,11 @@ que o monitor executaria passo a passo, agora está codificado e pode rodar sem 
 #    papel? Como o make sabe que não precisa recompilar um arquivo
 #    que não mudou?
 
-Resposta 1:
+Resposta 1:No make, esse papel é cumprido pelas dependências e pelos timestamps. O make compara o horário dos arquivos-fonte com o do arquivo alvo. Se o alvo já existir e estiver mais recente que suas dependências, ele entende que não precisa recompilar. Assim, apenas arquivos modificados são recompilados, evitando trabalho desnecessário. 
 
 
 # 2. O monitor unificava "supervisor, carregador e rotinas de I/O
 #    sob uma interface textual". O que o Makefile unifica no fluxo
 #    de desenvolvimento moderno?
 
-Resposta 2:
+Resposta 2:O Makefile unifica o fluxo de desenvolvimento ao centralizar comandos e regras do projeto em um só lugar. Ele integra tarefas como a compilação do código, gerenciamento de dependências, execução de testes, limpeza de arquivos temporários e o empacotamento e deploy. Dessa forma, o Makefile funciona como uma interface padronizada de automação do projeto, facilitando a reprodução do ambiente e a organização do processo de desenvolvimento moderno.
